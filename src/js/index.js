@@ -9,7 +9,14 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Home } from "./component/home.js";
+import { Home } from "./component/Home";
+import { Other } from "./component/Other";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(
+	<div>
+		<Home />
+		<Other />
+	</div>,
+	document.querySelector("#app")
+);
